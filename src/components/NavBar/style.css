@@ -1,0 +1,19 @@
+*{
+    --size-text: 2rem
+}
+
+.navbar  {
+    background-color: #502663;
+    color: white;
+    font:  bold var(--size-text)/35px 'Exo', serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0% 3% 0%;
+}
+
+
+@media screen and (max-width: 480px) {
+    *{
+        --size-text:1rem
+    }
+}
