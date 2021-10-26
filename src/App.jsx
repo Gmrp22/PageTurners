@@ -1,12 +1,12 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar";
+import Header from './components/Home/Header'
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <NavBar />;
+  return <Header />;
 }
 
 export default App;

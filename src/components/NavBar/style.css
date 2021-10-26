@@ -1,5 +1,6 @@
 *{
     --size-text: 2rem
+    box-sizing: border-box;
 }
 
 .navbar  {
