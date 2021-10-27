@@ -1,0 +1,38 @@
+* {
+  --w-info: 33.33%;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+  font: var(--size-text) / 35px "Exo", sans-serif;
+  color: #b18a4c;
+  position: relative;
+  top: 10vh;
+  margin-bottom: 25vh;
+}
+.info-element {
+  text-align: center;
+  width: var(--w-info);
+}
+span{
+  display: block;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 640px) {
+  * {
+    --w-info: 100%;
+  }
+  .info {
+    position: relative;
+    top: 5vh;
+}
+.info-element{
+    margin-top: 5vh;
+}
+
+}
