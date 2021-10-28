@@ -1,20 +1,19 @@
-*{
-    --size-text: 2rem
-    box-sizing: border-box;
-}
+
 
 .navbar  {
     background-color: #502663;
     color: white;
-    font:  bold var(--size-text)/35px 'Exo', serif;
+    font:  bold 2rem/35px 'Exo', serif;
     display: flex;
     justify-content: space-around;
     padding: 3% 0% 3% 0%;
+    width: 100%;
+    position: fixed;
 }
 
 
 @media screen and (max-width: 480px) {
-    *{
-        --size-text:1rem
-    }
+ .navbar{
+    font:  bold 1.2rem/35px 'Exo', serif;
+ }
 }

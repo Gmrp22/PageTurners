@@ -1,0 +1,45 @@
+*{
+  --book-text: 2rem;
+  --book-label-separation: 2.5vh;
+}
+.book-card {
+  border: 5px solid #824d4d;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 2vh 2vw 0 2vw;
+  padding: 2vh 2vw 0 2vw;
+
+}
+.book-card label{
+  margin: var(--book-label-separation) 0 var(--book-label-separation) 0
+}
+.book-card .book-data-title{
+  font: bolder var(--book-text) / 35px "Exo", sans-serif;
+  color:#6b3fc4;
+}
+
+.book-card .book-data{
+  text-align: center;
+  color:#8263A6;
+  font: normal var(--book-text) / 35px "Exo", sans-serif;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 640px) {
+  *{
+    --book-text:1rem;
+    --book-label-separation:1vh;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  * {
+    --book-text:1.3rem;
+    --book-label-separation:2vh;
+  }
+}
