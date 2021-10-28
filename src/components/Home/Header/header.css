@@ -6,7 +6,7 @@
 .header {
   font: var(--size-text) / 35px "Exo", sans-serif;
   color: white;
-  background: url("../.././../img/home/lilly-rum-iyKVGRu79G4-unsplash.jpg") no-repeat
+  background: url("../.././../img/home/header.jpg") no-repeat
     left center;
   background-size: cover;
   width: 100%;
@@ -17,7 +17,7 @@
   padding: 10% 0% 10% 3%;
 }
 
-h1 {
+.header h1 {
   margin-top: 18vh;
   margin-bottom: 0vh;
   font-weight: bolder;
@@ -55,4 +55,5 @@ p {
     --size-text: 1.7rem;
     --p-width: 40%;
   }
+
 }
