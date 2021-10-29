@@ -1,0 +1,26 @@
+.book-biblio-card {
+    border: 5px solid #6b3fc4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 2vh 2vw 0 2vw;
+    padding: 2vh 2vw 0 2vw;
+  
+  }
+  .book-biblio-card label{
+    margin: var(--book-label-separation) 0 var(--book-label-separation) 0
+  }
+  .book-biblio-card .book-data-title{
+    font: bolder var(--book-text) / 35px "Exo", sans-serif;
+    color:#8263A6;
+ 
+  }
+  
+  .book-biblio-card .book-data{
+    text-align: center;
+    color:#824d4d;
+    font: normal var(--book-text) / 35px "Exo", sans-serif;
+  }
+  
