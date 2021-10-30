@@ -1,8 +1,8 @@
 
 
-.navbar  {
+.navbarM  {
     background-color: #502663;
-    color: white;
+    color: white !important;
     font:  bold 2rem/35px 'Exo', serif;
     display: flex;
     justify-content: space-around;
@@ -11,9 +11,12 @@
     position: fixed;
 }
 
+.navbarM a{
+    color: white !important;
+}
 
 @media screen and (max-width: 480px) {
- .navbar{
+ .navbarM{
     font:  bold 1.2rem/35px 'Exo', serif;
  }
 }
