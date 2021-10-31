@@ -6,14 +6,14 @@ import NavBar from "./components/NavBar/NavBar";
 import Gallery from "./components/Descubre/Gallery";
 import Biblioteca from "./components/Biblioteca/ListaBiblioteca/Biblioteca";
 import BooksBiblioList from "./components/Biblioteca/BooksBiblioList/BooksList";
-
+import CrearBiblio from "./components/Biblioteca/CrearBiblioteca/CrearBiblio";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
     <NavBar />
-    <Biblioteca/></div>
+    <CrearBiblio/></div>
   );
 }
 
