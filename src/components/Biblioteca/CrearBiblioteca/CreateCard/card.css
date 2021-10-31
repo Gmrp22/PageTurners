@@ -1,0 +1,54 @@
+.new-card {
+  border: 5px solid #6b3fc4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 2vh 10% 0 10%;
+  padding: 2vh 2vw 0 2vw;
+}
+.new-card label,
+input {
+  margin: var(--book-label-separation) 0 var(--book-label-separation) 0;
+}
+.new-card label,
+input {
+  font: bolder var(--book-text) / 35px "Exo", sans-serif;
+  color: #6b3fc4;
+}
+
+.new-card input {
+  border-style: none;
+  border-bottom: 2px solid RGB(80, 39, 99);
+}
+
+.new-card input:focus {
+  border: none;
+  background-color: #d4b6e2;
+}
+.new-card button {
+  background-color: #6b3fc4;
+  font: bold 1rem/35px "Exo", serif;
+  color: #fff;
+  border-radius: 3px;
+  width: 30%;
+  margin: 3% 0;
+}
+/* Responsive */
+@media screen and (max-width: 640px) {
+  * {
+    --book-text: 1rem;
+    --book-label-separation: 1vh;
+  }
+  .new-card button{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  * {
+    --book-text: 1.3rem;
+    --book-label-separation: 2vh;
+  }
+}
