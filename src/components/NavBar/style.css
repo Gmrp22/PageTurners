@@ -14,7 +14,13 @@
 
 .navbarM a{
     color: white !important;
+    text-decoration: none;
 }
+
+.navbarM a:hover{
+    color:red; 
+}
+
 
 @media screen and (max-width: 480px) {
  .navbarM{

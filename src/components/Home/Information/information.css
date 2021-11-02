@@ -16,6 +16,10 @@
   text-align: center;
   width: var(--w-info);
 }
+.info-element:hover{
+  background-color: rgba(130, 99, 166, 0.2);
+  color:#6b3fc4;
+}
 span{
   display: block;
 }
