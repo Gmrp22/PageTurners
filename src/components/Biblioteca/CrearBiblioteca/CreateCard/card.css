@@ -24,7 +24,7 @@ input {
 }
 
 .new-card input:focus {
-  border: none;
+  border-bottom: 2px solid RGB(80, 39, 99);
   background-color: #d4b6e2;
 }
 .new-card button {

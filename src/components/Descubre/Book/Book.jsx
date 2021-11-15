@@ -5,9 +5,9 @@ export default function Book(props) {
       <label className="book-data-title">Nombre de libro:</label>
       <label className="book-data">{props.book.nombre}</label>
       <label className="book-data-title">Nombre de autor:</label>
-      <label className="book-data">{props.book.autorId}</label>
+      <label className="book-data">{props.book.autors.nombre}</label>
       <label className="book-data-title">Genero:</label>
-      <label className="book-data">{props.book.generoId}</label>
+      <label className="book-data">{props.book.generos.nombre}</label>
     </div>
   );
 }
