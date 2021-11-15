@@ -1,0 +1,26 @@
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vh;
+  padding: 35vh 2vw 0 2vw;
+  background: url("../../img/gallery/background.png") no-repeat left top;
+  background-size: cover;
+ 
+}
+#h1-gallery {
+  margin: 0;
+  padding: 0px;
+  position: relative;
+  top: 20vh;
+  text-align: center;
+  font: bolder var(--book-text) / 35px "Exo", sans-serif;
+  color: #6b3fc4;
+}
+@media screen and (max-width: 480px) {
+  .gallery {
+    display: block;
+    width: 90%;
+    padding: 10vh 5% 0vh 5%;
+  }
+}

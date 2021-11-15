@@ -1,0 +1,29 @@
+
+
+.navbarM  {
+    background-color: #502663;
+    color: white !important;
+    font:  bold 2rem/35px 'Exo', serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0% 3% 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.navbarM a{
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbarM a:hover{
+    color:red; 
+}
+
+
+@media screen and (max-width: 480px) {
+ .navbarM{
+    font:  bold 1.2rem/35px 'Exo', serif;
+ }
+}

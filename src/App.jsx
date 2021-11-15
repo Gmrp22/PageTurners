@@ -1,45 +1,32 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
 
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./components/Home/Home";
+import NavBar from "./components/NavBar/NavBar";
+import Gallery from "./components/Descubre/Gallery";
+import Biblioteca from "./components/Biblioteca/ListaBiblioteca/Biblioteca";
+import BooksBiblioList from "./components/Biblioteca/BooksBiblioList/BooksList";
+import CrearBiblio from "./components/Biblioteca/CrearBiblioteca/CrearBiblio";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from "react";
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/Home" component={Home} />
+        <Route exact path="/" component={Home} />
+        <React.Fragment>
+          <NavBar />
+          <Route exact path="/Gallery" component={Gallery} />
+          <Route exact path="/Biblioteca" component={Biblioteca} />
+          <Route exact path="/Libros-Biblioteca" component={BooksBiblioList} />
+          <Route exact path="/Crear-Biblioteca" component={CrearBiblio} />
+          </React.Fragment>
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
+
